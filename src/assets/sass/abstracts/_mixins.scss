@@ -1,0 +1,52 @@
+@import "variables";
+
+@mixin flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+//Mixin para game-person
+@mixin media-game-small {
+  @media (min-width: 425px) {
+    width: calc(#{$baseWidth} + 40px);
+  }
+}
+
+@mixin media-game-medium {
+  @media (min-width: 460px) {
+    left: calc(#{($baseLeft)} + 5%);
+    width: calc(#{$baseWidth} + 90px);
+  }
+}
+
+@mixin media-form-large {
+  @media (min-width: 768px) {
+    @content;
+  }
+}
+
+@mixin media-game-large {
+  @media (min-width: 768px) {
+    left: calc(#{($baseLeft)} + 7%);
+    width: calc(#{$baseWidth} + 214px);
+    height: calc(#{$baseHeight} + 20px);
+  }
+}
+
+
+
+@mixin media-game-xlarge {
+  @media (min-width: 1024px) {
+    left: calc(#{($baseLeft)} + 15%);
+  }
+}
+
+@mixin media-game-xxlarge {
+  @media (min-width: 1440px) {
+    left: calc(#{($baseLeft)} + 25%);
+  }
+}
+
+

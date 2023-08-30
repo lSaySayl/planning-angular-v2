@@ -1,0 +1,20 @@
+.homepage {
+  display: grid;
+  gap: 20px;
+
+  &__header {
+    display: flex;
+    justify-content: center;
+
+    &-logo {
+      width: 100px;
+    }
+  }
+
+  &__buttons {
+    display: grid;
+    gap: 20px;
+  }
+
+}
+

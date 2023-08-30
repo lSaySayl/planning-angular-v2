@@ -1,0 +1,16 @@
+.app__input {
+  height: 40px;
+  width: 292px;
+  padding: 4px 4px 4px 15px;
+  border-radius: 100px;
+  color: white;
+  border: 1px solid #6429cd;
+  background: linear-gradient(0deg, #6429cd0d, #6429cd0d),linear-gradient(0deg, rgba(100, 41, 205, 0.05), rgba(100, 41, 205, 0.05));
+  margin-top: 5px;
+  outline: none;
+
+  &::placeholder {
+    color: #ffffff;
+    opacity: 0.5;
+  }
+}

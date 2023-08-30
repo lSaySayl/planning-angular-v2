@@ -1,0 +1,30 @@
+<form class="form" [formGroup]="formLogin">
+  <img
+    class="form__img"
+    src="../../../assets/img/logo.svg"
+    alt=""
+    routerLink=""
+  />
+
+  <app-button-google (click)="loginWithGoogle()">
+    <span>G</span>
+    <span> Iniciar sesión con Google</span>
+  </app-button-google>
+
+  <section class="form__field">
+    <label class="form__label">Correo</label>
+    <app-input>
+      <input type="email" class="form__input" formControlName="email" />
+    </app-input>
+  </section>
+
+  <section class="form__field">
+    <label class="form__label">Contraseña</label>
+    <app-input>
+      <input type="password" class="form__input" formControlName="password" />
+    </app-input>
+  </section>
+</form>
+<app-button [style]="'register'" class="form__button">
+  <span (click)="loginWithEmailAndPassword(formLogin)">Iniciar sesión</span>
+</app-button>

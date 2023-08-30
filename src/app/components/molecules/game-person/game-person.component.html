@@ -1,0 +1,47 @@
+<section class="container">
+  <form class="modal__form" [formGroup]="formPerson" (ngSubmit)="submitForm()">
+    <label class="modal__form-label">
+      Nombre:
+      <input type="text" class="modal__form-input" formControlName="name"/>
+    </label>
+
+    <section class="modal__form-checkboxes">
+      <section class="modal__form-checkboxes-container">
+        <label class="modal__form-checkboxes-label"> Jugador </label>
+        <input
+          type="checkbox"
+          class="modal__form-checkboxes-input"
+          formControlName="isPlayer"
+        />
+      </section>
+      <section class="modal__form-checkboxes-container">
+        <label class="modal__form-checkboxes-label"> Espectador </label>
+        <input
+          type="checkbox"
+          class="modal__form-checkboxes-input"
+          formControlName="isAdmin"
+
+        />
+      </section>
+    </section>
+
+    <button
+      type="submit"
+      class="modal__form-button"
+      [ngClass]="{
+        'modal__form-button-valid': formPerson.valid,
+        'modal__form-button-disabled': !formPerson.valid
+      }"
+
+    >
+      Continuar
+    </button>
+    <section class="modal__form-container">
+      <p class="modal__form-error" *ngIf="getErrorMessage('name')">
+        {{ getErrorMessage("name") }}
+      </p>
+
+    </section>
+  </form>
+
+</section>

@@ -1,0 +1,28 @@
+.header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 0;
+  left: 60px;
+  gap: 10px;
+  padding: 20px;
+
+  &__text {
+    color: #fff;
+    font-size: 21px;
+    font-style: normal;
+    font-weight: 600;
+  }
+
+  @media (max-width: 320px) {
+    left: 0;
+    justify-content: center;
+    width: 100%;
+    background-color: rgba(236, 235, 235, 0.152);
+  }
+
+  @media (min-width: 376px) {
+    left: 0;
+  }
+}

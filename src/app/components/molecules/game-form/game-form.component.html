@@ -1,0 +1,25 @@
+<form class="form" [formGroup]="formToCreateGame" (ngSubmit)="captureData()">
+  <label class="form__label">
+    Nombre de la partida:
+    <app-input>
+      <input class="form__input" formControlName="name"/>
+    </app-input>
+  </label>
+  <button
+    class="form__button"
+    type="submit"
+    [ngClass]="{
+      'form__button-valid': formToCreateGame.valid,
+      'form__button-disabled': !formToCreateGame.valid
+    }"
+    (click)="openModal()"
+  >
+    Crear partida
+  </button>
+  <section class="form__container">
+    <p class="form__error" *ngIf="getErrorMessage('name')">
+      {{ getErrorMessage("name") }}
+    </p>
+  </section>
+</form>
+<app-game-person *ngIf="!show"></app-game-person>

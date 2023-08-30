@@ -1,0 +1,34 @@
+<form class="form" [formGroup]="formRegister">
+  <img
+    class="form__img"
+    src="../../../assets/img/logo.svg"
+    alt="logo-pragma"
+    routerLink=""
+  />
+  <section class="form__field">
+    <label class="form__label">Correo</label>
+    <app-input>
+      <input
+        type="email"
+        class="form__input"
+        formControlName="email"
+        placeholder="ingrese su correo"
+      />
+    </app-input>
+  </section>
+  <section class="form__field">
+    <label class="form__label">Contraseña</label>
+    <app-input>
+      <input
+        type="password"
+        class="form__input"
+        formControlName="password"
+        placeholder="ingrese su contraseña"
+      />
+    </app-input>
+  </section>
+</form>
+
+<app-button [style]="'register'" class="form__button">
+  <span (click)="registerWithEmailAndPassword(formRegister)">Registrarse</span>
+</app-button>
