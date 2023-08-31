@@ -1,0 +1,14 @@
+<section class="container">
+  <section class="modal">
+    <header class="modal__invite">
+      <h2 class="modal__invite-title">Invitar jugadores</h2>
+      <button class="modal__invite-close" (click)="closeModalGame()">X</button>
+
+    </header>
+    <section class="modal__copy">
+      <input class="modal__copy-input" type="text" [value]="value">
+      <button class="modal__copy-button" [cdkCopyToClipboard]="value" >Copiar link</button>
+    </section>
+  </section>
+</section>
+

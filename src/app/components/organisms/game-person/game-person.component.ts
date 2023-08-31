@@ -51,7 +51,7 @@ export class GamePersonComponent {
       if (isPlayer) {
         this.router.navigate(['/table']);
       } else {
-        this.router.navigate(['/admin']);
+        this.router.navigate(['']);
       }
     }
   }

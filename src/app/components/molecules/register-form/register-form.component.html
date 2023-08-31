@@ -1,10 +1,5 @@
 <form class="form" [formGroup]="formRegister">
-  <img
-    class="form__img"
-    src="../../../assets/img/logo.svg"
-    alt="logo-pragma"
-    routerLink=""
-  />
+  <app-logo [style]="'form__img'" routerLink="" ></app-logo>
   <section class="form__field">
     <label class="form__label">Correo</label>
     <app-input>
@@ -27,8 +22,11 @@
       />
     </app-input>
   </section>
+  <button (click)="registerWithEmailAndPassword(formRegister)" >Registrarse</button>
 </form>
 
-<app-button [style]="'register'" class="form__button">
-  <span (click)="registerWithEmailAndPassword(formRegister)">Registrarse</span>
-</app-button>
+<!-- <app-button (click)="registerWithEmailAndPassword(formRegister)" [style]="'register'" class="form__button">
+  <span >Registrarse</span>
+</app-button> -->
+
+

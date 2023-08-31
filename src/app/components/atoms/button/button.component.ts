@@ -9,9 +9,6 @@ export class ButtonComponent {
   @Input() style: string = '';
   @Input() routerLink: string = '';
   @Input() buttonType: string = '';
-  @Output() clicked: EventEmitter<void> = new EventEmitter<void>();
-  handleClick() {
-    this.clicked.emit(); // Emitir el evento cuando se hace clic en el botón
-  }
+
 
 }

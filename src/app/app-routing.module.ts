@@ -5,6 +5,7 @@ import { RegisterComponent } from './components/pages/register/register.componen
 import { LoginComponent } from './components/pages/login/login.component';
 import { TableComponent } from './components/pages/table/table.component';
 import { GameComponent } from './components/pages/game/game.component';
+import { AdminComponent } from './components/pages/admin/admin.component';
 
 
 const routes: Routes = [
@@ -13,6 +14,7 @@ const routes: Routes = [
   { path: "login", component: LoginComponent},
   { path: "game", component: GameComponent},
   { path: "table", component: TableComponent},
+  { path: "admin", component: AdminComponent},
 
 
 ];

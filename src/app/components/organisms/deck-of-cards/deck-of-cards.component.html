@@ -1,0 +1,31 @@
+<ng-container *ngIf="selectedCards.length > 0; else noCardsMessage">
+  <ng-container *ngFor="let card of selectedCards; let i = index">
+    <app-card [card]="card" [ngClass]="calculateCardClass(i + 1)"></app-card>
+  </ng-container>
+</ng-container>
+
+<ng-template #noCardsMessage>
+  <p class="table__no-cards-message">No hay cartas registradas</p>
+</ng-template>
+<p class="table__no-cards-message" *ngIf="isCardSelected">
+  Se ha escogido una carta
+</p>
+<app-loading-cards *ngIf="isAdminProcessing"></app-loading-cards>
+
+<section class="table__card-container">
+  <section class="table__card-container-text">
+    <h4>{{ inputCreatePlayer }}</h4>
+  </section>
+  <section class="card__choice">
+    <p class="card__choice-text">Elige una carta 🥸</p>
+    <section class="card__choice-cards">
+      <app-card
+        class="card__choice-cards-random"
+        *ngFor="let card of cards"
+        [card]="card"
+        (click)="chooseCard(card)"
+      >
+      </app-card>
+    </section>
+  </section>
+</section>

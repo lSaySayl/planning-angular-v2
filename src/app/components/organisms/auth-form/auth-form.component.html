@@ -1,15 +1,6 @@
 <form class="form" [formGroup]="formLogin">
-  <img
-    class="form__img"
-    src="../../../assets/img/logo.svg"
-    alt=""
-    routerLink=""
-  />
-
-  <app-button-google (click)="loginWithGoogle()">
-    <span>G</span>
-    <span> Iniciar sesión con Google</span>
-  </app-button-google>
+  <app-logo [style]="'form__img'" routerLink=""></app-logo>
+  <app-button-google (click)="loginWithGoogle()"></app-button-google>
 
   <section class="form__field">
     <label class="form__label">Correo</label>
@@ -24,7 +15,8 @@
       <input type="password" class="form__input" formControlName="password" />
     </app-input>
   </section>
+  <button class="form__button" (click)="loginWithEmailAndPassword(formLogin)">Iniciar sesión</button>
 </form>
-<app-button [style]="'register'" class="form__button">
+<!-- <app-button [style]="'register'" class="form__button">
   <span (click)="loginWithEmailAndPassword(formLogin)">Iniciar sesión</span>
-</app-button>
+</app-button> -->

@@ -1,0 +1,10 @@
+<header class="header">
+  <app-ficha></app-ficha>
+  <p class="header__text">{{ inputCreateGame }}</p>
+
+  <section class="header__info">
+    <span class="header__info-text">{{ inputCreatePlayer.slice(0, 2) }}</span>
+    <button class="header__info-button" (click)="modalGame()" >Invitar jugadores</button>
+    <app-game-invite-modal *ngIf="playerInvitationModal" (closeModalEvent)="closeModal()"></app-game-invite-modal>
+  </section>
+</header>
