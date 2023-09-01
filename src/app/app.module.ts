@@ -15,10 +15,10 @@ import { AuthFormComponent } from './components/organisms/auth-form/auth-form.co
 import { RegisterComponent } from './components/pages/register/register.component';
 import { LoginComponent } from './components/pages/login/login.component';
 import { ButtonGoogleComponent } from './components/atoms/button-google/button-google.component';
-import { RegisterFormComponent } from './components/molecules/register-form/register-form.component';
+import { RegisterFormComponent } from './components/organisms/register-form/register-form.component';
 import { TableComponent } from './components/pages/table/table.component';
 import { GameComponent } from './components/pages/game/game.component';
-import { GameFormComponent } from './components/molecules/game-form/game-form.component';
+import { GameFormComponent } from './components/organisms/game-form/game-form.component';
 import { GameHeaderComponent } from './components/molecules/game-header/game-header.component';
 import { GamePersonComponent } from './components/organisms/game-person/game-person.component';
 import { PokerTableComponent } from './components/atoms/table/poker-table.component';

@@ -69,7 +69,7 @@ export class TableComponent {
           this.isAdminProcessing = true;
           setTimeout(() => {
             this.router.navigate(['/admin']);
-          }, 7000);
+          }, 2000);
         }, 1000);
       }
     }

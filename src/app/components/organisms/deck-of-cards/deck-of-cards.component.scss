@@ -1,13 +1,13 @@
-/* Estilos de contenedor de cartas */
 .table__card-container {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  height: 35vh;
 
   &-text {
     position: absolute;
-    top: 72%;
+    top:68%;
     color: #fff;
     font-size: 9px;
     font-style: normal;
@@ -16,18 +16,19 @@
     margin-bottom: 2%;
 
     @media (min-width: 768px) {
-      left: 46%;
-      top: 75%;
+      left: 47%;
+      top:70%;
       font-size: 14px;
     }
 
     @media (min-width: 1024px) {
-      top: 76%;
+      left: 47.5%;
+      top: 71%;
     }
 
     @media (min-width: 1440px) {
-      top: 79%;
-      left: 48%;
+      top: 74%;
+      left: 48.6%;
     }
   }
 
@@ -41,7 +42,7 @@
 
 .table__no-cards-message {
   position: absolute;
-  top: 40%;
+  top: 35%;
   left: 35%;
   font-size: 10px;
   color:#e4c7f9;
@@ -54,19 +55,19 @@
 
   @media (min-width: 768px) {
     font-size: 16px;
-    top: 41%;
+    top: 37%;
     left: 39%;
   }
 
   @media (min-width: 1024px) {
     font-size: 18px;
     left: 40%;
-    top: 42.5%;
+    top: 40%;
   }
 
   @media (min-width: 1440px) {
     font-size: 20px;
-    top: 48%;
+    top: 44%;
     left: 44%;
   }
 }
@@ -75,8 +76,6 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
-  height: 200px;
-  margin-top: 5%;
 
   &-text {
     color: #fff;
@@ -124,16 +123,17 @@
     }
 
     @media (min-width: 768px) {
-      left: 20%;
-      top: 66%;
+      left: 22%;
+      top: 62%;
     }
 
     @media (min-width: 1024px) {
-      left: 25%;
+      top: 63%;
+      left: 33%;
     }
 
     @media (min-width: 1440px) {
-      top: 70%;
+      top: 65%;
       left: 40%;
     }
   }
@@ -151,7 +151,7 @@
 
     @media (min-width: 768px) {
       left: 2%;
-      top: 40%;
+      top: 35%;
     }
 
     @media (min-width: 1024px) {
@@ -159,7 +159,7 @@
     }
 
     @media (min-width: 1440px) {
-      top: 46%;
+      top: 40%;
       left: 30%;
     }
   }
@@ -176,17 +176,17 @@
     }
 
     @media (min-width: 768px) {
-      left: 20%;
-      top: 13%;
+      left: 22%;
+      top: 10%;
     }
 
     @media (min-width: 1024px) {
-      top: 15%;
-      left: 25%;
+      top: 10%;
+      left: 33%;
     }
 
     @media (min-width: 1440px) {
-      top: 20%;
+      top: 15%;
       left: 40%;
     }
   }
@@ -204,16 +204,16 @@
 
     @media (min-width: 768px) {
       right: 20%;
-      top: 13%;
+      top: 10%;
     }
 
     @media (min-width: 1024px) {
-      top: 15%;
-      right: 25%;
+      top: 10%;
+      right: 33%;
     }
 
     @media (min-width: 1440px) {
-      top: 20%;
+      top: 15%;
       right: 40%;
     }
   }
@@ -233,7 +233,7 @@
 
     @media (min-width: 768px) {
       right: 2%;
-      top: 40%;
+      top: 35%;
     }
 
     @media (min-width: 1024px) {
@@ -241,7 +241,7 @@
     }
 
     @media (min-width: 1440px) {
-      top: 46%;
+      top: 40%;
       right: 30%;
     }
   }
@@ -259,15 +259,16 @@
 
     @media (min-width: 768px) {
       right: 20%;
-      top: 66%;
+      top: 62%;
     }
 
     @media (min-width: 1024px) {
-      right: 25%;
+      right: 33%;
+      top: 63%;
     }
 
     @media (min-width: 1440px) {
-      top: 70%;
+      top: 65%;
       right: 40%;
     }
 
@@ -277,7 +278,7 @@
   &-7 {
     position: absolute;
     left: 45%;
-    top: 64%;
+    top: 60%;
     background-color: #330072;
     border-radius: 7px;
 
@@ -287,16 +288,17 @@
 
     @media (min-width: 768px) {
       left: 47.1%;
-      top: 66%;
+      top: 62%;
     }
 
     @media (min-width: 1024px) {
-      top: 68%;
+      left: 48%;
+      top: 63%;
     }
 
     @media (min-width: 1440px) {
-      top: 70%;
-      left: 48%;
+      top: 65%;
+      left: 48.5%;
     }
   }
 }
