@@ -6,7 +6,7 @@ import { Component, Input } from '@angular/core';
   styleUrls: ['./button-google.component.scss']
 })
 export class ButtonGoogleComponent {
-  @Input() style: string = '';
-  @Input() routerLink: string = '';
+  @Input() style = '';
+  @Input() routerLink = '';
 
 }

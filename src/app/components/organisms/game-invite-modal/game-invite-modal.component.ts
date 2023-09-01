@@ -13,7 +13,7 @@ export class GameInviteModalComponent {
   }
 
 
-  value: string = `http://localhost:4200/${this.generateRandomPart()}`;
+  value = `http://localhost:4200/${this.generateRandomPart()}`;
 
   generateRandomPart(): string {
     const characters = 'abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789';

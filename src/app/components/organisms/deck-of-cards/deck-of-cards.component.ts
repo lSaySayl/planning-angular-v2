@@ -12,11 +12,11 @@ import { CardState } from 'src/app/state/reducers/card.reducers';
   styleUrls: ['./deck-of-cards.component.scss']
 })
 export class DeckOfCardsComponent {
-  inputCreatePlayer: string = '';
-  inputCreateGame: string = '';
-  isPlayer: boolean = false;
-  isCardSelected: boolean = false;
-  isAdminProcessing: boolean = false;
+  inputCreatePlayer = '';
+  inputCreateGame = '';
+  isPlayer = false;
+  isCardSelected = false;
+  isAdminProcessing = false;
   cards: any[] = [];
 
   selectedCards: Card[] = [];

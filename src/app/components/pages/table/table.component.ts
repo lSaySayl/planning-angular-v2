@@ -13,11 +13,11 @@ import { CardState } from 'src/app/state/reducers/card.reducers';
 })
 export class TableComponent {
 
-  inputCreateGame: string = '';
-  inputCreatePlayer: string = '';
-  isPlayer: boolean = false;
-  isAdminProcessing: boolean = false;
-  isCardSelected: boolean = false;
+  inputCreateGame = '';
+  inputCreatePlayer = '';
+  isPlayer = false;
+  isAdminProcessing = false;
+  isCardSelected = false;
 
   cards: any[] = [];
 
@@ -29,6 +29,7 @@ export class TableComponent {
 
     }
 
+    // eslint-disable-next-line @angular-eslint/use-lifecycle-interface
     ngOnInit(): void {
       this.inputCreateGame = this.sharedDataService.getInputCreateGame();
       this.inputCreatePlayer = this.sharedDataService.getInputCreatePlayer();

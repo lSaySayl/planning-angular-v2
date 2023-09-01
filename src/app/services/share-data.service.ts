@@ -4,7 +4,7 @@ import { Injectable } from '@angular/core';
   providedIn: 'root',
 })
 export class ShareDataService {
-  private inputCreateGame: string = '';
+  private inputCreateGame = '';
 
   setInputCreateGame(value: string): void {
     this.inputCreateGame = value;
@@ -14,7 +14,7 @@ export class ShareDataService {
     return this.inputCreateGame;
   }
 
-  private inputValue: string = '';
+  private inputValue = '';
 
   setInputCreatePlayer(value: string): void {
     this.inputValue = value;
@@ -25,7 +25,7 @@ export class ShareDataService {
   }
 
   //Rastrear si el usuario es un jugador o un espectador.
-  private isPlayer: boolean = false;
+  private isPlayer = false;
 
   setIsPlayer(value: boolean): void {
     this.isPlayer = value;

@@ -1,4 +1,4 @@
-import { Component, Input, EventEmitter, Output } from '@angular/core';
+import { Component, Input } from '@angular/core';
 
 @Component({
   selector: 'app-button',
@@ -6,9 +6,9 @@ import { Component, Input, EventEmitter, Output } from '@angular/core';
   styleUrls: ['./button.component.scss']
 })
 export class ButtonComponent {
-  @Input() style: string = '';
-  @Input() routerLink: string = '';
-  @Input() buttonType: string = '';
+  @Input() style = '';
+  @Input() routerLink = '';
+  @Input() buttonType = '';
 
 
 }

@@ -36,7 +36,7 @@ export class GameFormComponent {
     }
   }
 
-  show: boolean = false;
+  show = false;
 
   public openModal(): void {
     console.log("hola")

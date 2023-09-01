@@ -1,6 +1,5 @@
 import { Component } from '@angular/core';
-import { FormGroup, FormBuilder, Validators } from '@angular/forms';
-import { ShareDataService } from 'src/app/services/share-data.service';
+
 
 @Component({
   selector: 'app-game',

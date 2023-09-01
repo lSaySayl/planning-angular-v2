@@ -7,9 +7,9 @@ import { ShareDataService } from 'src/app/services/share-data.service';
   styleUrls: ['./table-header.component.scss']
 })
 export class TableHeaderComponent {
-  inputCreateGame: string = '';
-  inputCreatePlayer: string = '';
-  isPlayer: boolean = false;
+  inputCreateGame = '';
+  inputCreatePlayer = '';
+  isPlayer = false;
   playerInvitationModal = false; // Inicialmente el modal está cerrado
 
   modalGame(): void {
