@@ -76,7 +76,7 @@ export class AdminComponent {
       this.isRevealed = !this.isRevealed;
       this.isWaiting = false;
       this.isGameStarted = true;
-    }, 4000);
+    }, 3000);
   }
 
   newVote(): void {
@@ -88,7 +88,7 @@ export class AdminComponent {
     setTimeout(() => {
 
       this.router.navigate(['/table']);
-    }, 2000);
+    }, 1000);
   }
 
   generateCardClass(index: number): string {

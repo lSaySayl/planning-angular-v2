@@ -1,3 +1,5 @@
+@import "../../../../assets/sass/abstracts/mixins";
+
 .table__card-container {
   display: flex;
   flex-direction: column;
@@ -115,107 +117,43 @@
     position: absolute;
     left: 5%;
     top: 20%;
-    background-color: red;
     border-radius: 7px;
+    background-color: #c686f7;
 
-    @media (min-width: 425px) {
-      left: 10%;
-    }
 
-    @media (min-width: 768px) {
-      left: 22%;
-      top: 62%;
-    }
-
-    @media (min-width: 1024px) {
-      top: 63%;
-      left: 33%;
-    }
-
-    @media (min-width: 1440px) {
-      top: 65%;
-      left: 40%;
-    }
+    @include card-0-media-styles;
   }
 
   &-2 {
     position: absolute;
     left: 5%;
     top: 35%;
-    background-color: greenyellow;
     border-radius: 7px;
+    background-color: #c686f7;
 
-    @media (min-width: 425px) {
-      left: 10%;
-    }
+    @include card-1-media-styles;
 
-    @media (min-width: 768px) {
-      left: 2%;
-      top: 35%;
-    }
 
-    @media (min-width: 1024px) {
-      left: 15%;
-    }
-
-    @media (min-width: 1440px) {
-      top: 40%;
-      left: 30%;
-    }
   }
 
   &-3 {
     position: absolute;
     left: 5%;
     top: 50%;
-    background-color: yellow;
     border-radius: 7px;
+    background-color: #c686f7;
+    @include card-2-media-styles;
 
-    @media (min-width: 425px) {
-      left: 10%;
-    }
-
-    @media (min-width: 768px) {
-      left: 22%;
-      top: 10%;
-    }
-
-    @media (min-width: 1024px) {
-      top: 10%;
-      left: 33%;
-    }
-
-    @media (min-width: 1440px) {
-      top: 15%;
-      left: 40%;
-    }
   }
 
   &-4 {
     position: absolute;
     right: 5%;
     top: 20%;
-    background-color: #c686f7;
     border-radius: 7px;
+    background-color: #c686f7;
 
-    @media (min-width: 425px) {
-      right: 10%;
-    }
-
-    @media (min-width: 768px) {
-      right: 20%;
-      top: 10%;
-    }
-
-    @media (min-width: 1024px) {
-      top: 10%;
-      right: 33%;
-    }
-
-    @media (min-width: 1440px) {
-      top: 15%;
-      right: 40%;
-    }
+    @include card-3-media-styles;
   }
 
   /* Cartas superiores */
@@ -224,53 +162,21 @@
     position: absolute;
     right: 5%;
     top: 35%;
-    background-color: #c686f7;
     border-radius: 7px;
+    background-color: #c686f7;
 
-    @media (min-width: 425px) {
-      right: 10%;
-    }
+    @include card-4-media-styles;
 
-    @media (min-width: 768px) {
-      right: 2%;
-      top: 35%;
-    }
 
-    @media (min-width: 1024px) {
-      right: 15%;
-    }
-
-    @media (min-width: 1440px) {
-      top: 40%;
-      right: 30%;
-    }
   }
 
   &-6 {
     position: absolute;
     right: 5%;
     top: 50%;
-    background-color: #c686f7;
     border-radius: 7px;
-
-    @media (min-width: 425px) {
-      right: 10%;
-    }
-
-    @media (min-width: 768px) {
-      right: 20%;
-      top: 62%;
-    }
-
-    @media (min-width: 1024px) {
-      right: 33%;
-      top: 63%;
-    }
-
-    @media (min-width: 1440px) {
-      top: 65%;
-      right: 40%;
-    }
+    background-color: #c686f7;
+    @include card-5-media-styles;
 
 
   }
@@ -280,25 +186,8 @@
     left: 45%;
     top: 60%;
     background-color: #330072;
-    border-radius: 7px;
 
-    @media (min-width: 425px) {
-      left: 46%;
-    }
+    @include card-6-media-styles;
 
-    @media (min-width: 768px) {
-      left: 47.1%;
-      top: 62%;
-    }
-
-    @media (min-width: 1024px) {
-      left: 48%;
-      top: 63%;
-    }
-
-    @media (min-width: 1440px) {
-      top: 65%;
-      left: 48.5%;
-    }
   }
 }

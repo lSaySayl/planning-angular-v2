@@ -49,4 +49,157 @@
   }
 }
 
+ @mixin card-0-media-styles {
+  @media (min-width: 425px) {
+    left: 10%;
+  }
+
+  @media (min-width: 768px) {
+    left: 22%;
+    top: 62%;
+  }
+
+  @media (min-width: 1024px) {
+    top: 63%;
+    left: 33%;
+  }
+
+  @media (min-width: 1440px) {
+    top: 65%;
+    left: 40%;
+  }
+}
+
+@mixin card-1-media-styles {
+  @media (min-width: 425px) {
+    left: 10%;
+  }
+
+  @media (min-width: 768px) {
+    left: 2%;
+    top: 35%;
+  }
+
+  @media (min-width: 1024px) {
+    left: 15%;
+  }
+
+  @media (min-width: 1440px) {
+    top: 40%;
+    left: 30%;
+  }
+}
+
+@mixin card-2-media-styles {
+  @media (min-width: 425px) {
+    left: 10%;
+  }
+
+  @media (min-width: 768px) {
+    left: 22%;
+    top: 10%;
+  }
+
+  @media (min-width: 1024px) {
+    top: 10%;
+    left: 33%;
+  }
+
+  @media (min-width: 1440px) {
+    top: 15%;
+    left: 40%;
+  }
+}
+
+@mixin card-3-media-styles {
+  @media (min-width: 425px) {
+    right: 10%;
+  }
+
+  @media (min-width: 768px) {
+    right: 20%;
+    top: 10%;
+  }
+
+  @media (min-width: 1024px) {
+    top: 10%;
+    right: 33%;
+  }
+
+  @media (min-width: 1440px) {
+    top: 15%;
+    right: 40%;
+  }
+}
+
+@mixin card-4-media-styles {
+  @media (min-width: 425px) {
+    right: 10%;
+  }
+
+  @media (min-width: 768px) {
+    right: 2%;
+    top: 35%;
+  }
+
+  @media (min-width: 1024px) {
+    right: 15%;
+  }
+
+  @media (min-width: 1440px) {
+    top: 40%;
+    right: 30%;
+  }
+}
+
+@mixin card-5-media-styles {
+  @media (min-width: 425px) {
+    right: 10%;
+  }
+
+  @media (min-width: 768px) {
+    right: 20%;
+    top: 62%;
+  }
+
+  @media (min-width: 1024px) {
+    right: 33%;
+    top: 63%;
+  }
+
+  @media (min-width: 1440px) {
+    top: 65%;
+    right: 40%;
+  }
+}
+
+@mixin card-6-media-styles {
+  @media (min-width: 425px) {
+    left: 46%;
+  }
+
+  @media (min-width: 768px) {
+    left: 47.1%;
+    top: 62%;
+  }
+
+  @media (min-width: 1024px) {
+    left: 48%;
+    top: 63%;
+  }
+
+  @media (min-width: 1440px) {
+    top: 65%;
+    left: 48.5%;
+  }
+}
+
+
+
+
+
+
+
+
+
 

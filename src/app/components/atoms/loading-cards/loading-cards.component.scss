@@ -2,7 +2,7 @@
   display: flex;
   position: absolute;
   left: 33%;
-  top: 39%;
+  top: 34%;
   gap: 5px;
   width: 200px;
   height: 200px;
@@ -12,18 +12,18 @@
   }
 
   @media (min-width: 768px) {
-    top: 40%;
+    top: 36%;
     left: 40%;
   }
 
   @media (min-width: 1024px) {
-    top: 41%;
+    top: 38%;
 
   }
 
   @media (min-width: 1440px) {
     left: 45%;
-    top: 47%;
+    top: 43%;
 
   }
 
@@ -58,18 +58,22 @@
 
     &:nth-child(1) {
       animation-name: moveOne;
+
     }
 
     &:nth-child(2) {
       animation-name: moveTwo;
+
     }
 
     &:nth-child(3) {
       animation-name: moveThree;
+
     }
 
     &:nth-child(4) {
       animation-name: moveFour;
+
     }
   }
 }
@@ -80,7 +84,7 @@
     transform: translateX(0);
   }
   50% {
-    transform: translateX(60px);
+    transform: translateX(95px);
   }
 }
 
@@ -116,7 +120,7 @@
     transform: translateX(0);
   }
   50% {
-    transform: translateX(-60px);
+    transform: translateX(-95px);
   }
 }
 
