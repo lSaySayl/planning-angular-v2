@@ -15,7 +15,7 @@ describe('RegisterFormComponent', () => {
     fixture.detectChanges();
   });
 
-  it('should create', () => {
+  it('should', () => {
     expect(component).toBeTruthy();
   });
 });

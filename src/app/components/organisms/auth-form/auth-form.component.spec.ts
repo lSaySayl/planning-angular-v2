@@ -1,6 +1,6 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
-
 import { AuthFormComponent } from './auth-form.component';
+
 
 describe('AuthFormComponent', () => {
   let component: AuthFormComponent;
@@ -18,4 +18,5 @@ describe('AuthFormComponent', () => {
   it('should create', () => {
     expect(component).toBeTruthy();
   });
+
 });

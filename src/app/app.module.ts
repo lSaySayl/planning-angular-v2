@@ -1,11 +1,12 @@
-import { NgModule, isDevMode } from '@angular/core';
+import { CUSTOM_ELEMENTS_SCHEMA, NgModule, isDevMode } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { ReactiveFormsModule } from '@angular/forms'; // Importa ReactiveFormsModule
 
-import { AngularFireModule} from '@angular/fire/compat';
+import { AngularFireModule, FIREBASE_OPTIONS} from '@angular/fire/compat';
 import {AngularFireAuthModule} from '@angular/fire/compat/auth';
+
 import { environment } from 'src/environments/environment';
 import { ButtonComponent } from './components/atoms/button/button.component';
 import { HomeComponent } from './components/pages/home/home.component';
@@ -45,6 +46,7 @@ import {ClipboardModule} from '@angular/cdk/clipboard';
     HomeComponent,
     InputComponent,
     AuthenticationComponent,
+    LogoComponent,
     AuthFormComponent,
     RegisterComponent,
     LoginComponent,
@@ -61,7 +63,6 @@ import {ClipboardModule} from '@angular/cdk/clipboard';
     CardComponent,
     DeckOfCardsComponent,
     GamePokerComponent,
-    LogoComponent,
     FichaComponent,
     LoadingCardsComponent,
     GameInviteModalComponent,
@@ -78,7 +79,11 @@ import {ClipboardModule} from '@angular/cdk/clipboard';
     ClipboardModule,
 
   ],
-  providers: [],
-  bootstrap: [AppComponent]
+  providers: [
+    { provide: FIREBASE_OPTIONS, useValue: environment.firebaseConfig }
+],
+  bootstrap: [AppComponent],
+  schemas: [ CUSTOM_ELEMENTS_SCHEMA ]
+
 })
 export class AppModule { }

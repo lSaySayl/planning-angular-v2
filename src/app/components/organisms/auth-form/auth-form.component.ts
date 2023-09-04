@@ -11,7 +11,7 @@ import { AuthService } from 'src/app/services/auth.service';
 export class AuthFormComponent {
   public formLogin: FormGroup;
 
-  constructor(private formBuilder: FormBuilder,private authService: AuthService, private router:Router) {
+  constructor(private formBuilder: FormBuilder,public authService: AuthService, private router:Router) {
     this.formLogin = this.initializeFormLogin();
   }
 

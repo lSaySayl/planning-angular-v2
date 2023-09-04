@@ -1,6 +1,8 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
 import { GamePersonComponent } from './game-person.component';
+import { ReactiveFormsModule } from '@angular/forms';
+import { ShareDataService } from 'src/app/services/share-data.service';
 
 describe('GamePersonComponent', () => {
   let component: GamePersonComponent;
@@ -8,7 +10,9 @@ describe('GamePersonComponent', () => {
 
   beforeEach(() => {
     TestBed.configureTestingModule({
-      declarations: [GamePersonComponent]
+      declarations: [GamePersonComponent],
+      imports: [ReactiveFormsModule], // Agrega ReactiveFormsModule a los imports
+      providers: [ShareDataService], // Si es necesario, agrega los providers necesarios
     });
     fixture = TestBed.createComponent(GamePersonComponent);
     component = fixture.componentInstance;
@@ -18,4 +22,6 @@ describe('GamePersonComponent', () => {
   it('should create', () => {
     expect(component).toBeTruthy();
   });
+
+
 });

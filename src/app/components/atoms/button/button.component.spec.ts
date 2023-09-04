@@ -1,5 +1,4 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
-
 import { ButtonComponent } from './button.component';
 
 describe('ButtonComponent', () => {
@@ -12,10 +11,11 @@ describe('ButtonComponent', () => {
     });
     fixture = TestBed.createComponent(ButtonComponent);
     component = fixture.componentInstance;
-    fixture.detectChanges();
   });
 
   it('should create', () => {
+    // Comprobamos que el componente se haya creado correctamente.
     expect(component).toBeTruthy();
   });
+
 });

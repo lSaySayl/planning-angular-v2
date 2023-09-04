@@ -1,6 +1,6 @@
 <!-- eslint-disable @angular-eslint/template/label-has-associated-control -->
 <form class="form" [formGroup]="formRegister">
-  <app-logo [style]="'form__img'" routerLink="" ></app-logo>
+  <app-logo [style]="'form__img'" routerLink=""></app-logo>
   <section class="form__field">
     <label class="form__label">Correo</label>
     <app-input>
@@ -8,8 +8,7 @@
         type="email"
         class="form__input"
         formControlName="email"
-        placeholder="ingrese su correo"
-      />
+        placeholder="ingrese su correo" />
     </app-input>
   </section>
   <section class="form__field">
@@ -19,15 +18,19 @@
         type="password"
         class="form__input"
         formControlName="password"
-        placeholder="ingrese su contraseña"
-      />
+        placeholder="ingrese su contraseña" />
     </app-input>
   </section>
-  <button (click)="registerWithEmailAndPassword(formRegister)" >Registrarse</button>
+  <button
+    class="form__button"
+    (click)="registerWithEmailAndPassword(formRegister)">
+    Registrarse
+  </button>
+  <section class="form__container">
+    <p class="form__error" *ngIf="errorMessage">{{ errorMessage }}</p>
+  </section>
 </form>
 
 <!-- <app-button (click)="registerWithEmailAndPassword(formRegister)" [style]="'register'" class="form__button">
   <span >Registrarse</span>
 </app-button> -->
-
-

@@ -11,7 +11,7 @@ import { ShareDataService } from 'src/app/services/share-data.service';
 export class GamePersonComponent {
   public formPerson: FormGroup;
 
-  constructor(private formBuilder: FormBuilder, private shareDataService: ShareDataService, private router: Router) {
+  constructor(private formBuilder: FormBuilder, private shareDataService: ShareDataService, public router: Router) {
     this.formPerson = this.initializeFormPerson();
   }
 

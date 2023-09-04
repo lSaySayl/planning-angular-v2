@@ -1,6 +1,7 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
 import { TableHeaderComponent } from './table-header.component';
+import { FichaComponent } from '../../atoms/ficha/ficha.component';
 
 describe('TableHeaderComponent', () => {
   let component: TableHeaderComponent;
@@ -8,7 +9,7 @@ describe('TableHeaderComponent', () => {
 
   beforeEach(() => {
     TestBed.configureTestingModule({
-      declarations: [TableHeaderComponent]
+      declarations: [TableHeaderComponent, FichaComponent],
     });
     fixture = TestBed.createComponent(TableHeaderComponent);
     component = fixture.componentInstance;

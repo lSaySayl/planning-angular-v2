@@ -10,7 +10,7 @@ import { ShareDataService } from 'src/app/services/share-data.service';
 export class GameFormComponent {
   public formToCreateGame: FormGroup;
 
-  constructor(private FormBuilder: FormBuilder, private shareDataService: ShareDataService) {
+  constructor(private FormBuilder: FormBuilder, public shareDataService: ShareDataService) {
     this.formToCreateGame = this.initializeFormToCreateGame();
   }
 

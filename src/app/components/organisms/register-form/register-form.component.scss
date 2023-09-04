@@ -4,6 +4,8 @@
   align-items: center;
   justify-content: center;
   width: 400px;
+  height: 500px;
+ /*  background-color: #ffffff; */
 
   &__img {
     cursor: pointer;
@@ -49,10 +51,25 @@
     padding: 25px 0;
     cursor: pointer;
     border: transparent;
+    color: white;
     background-color: #6429cd;
 
-    span {
-      color: #ffffff;
-    }
+  }
+
+  &__container {
+    height: 50px;
+    max-width: 300px;
+    margin-top: 20px;
+
+  }
+
+  &__error {
+    padding: 5px 10px;
+    color: #ff0000bc;
+    text-align: center;
+    font-size: 12px;
+    background-color: #5229706f;
+    border-radius: 10px;
+    margin: 2% 0;
   }
 }
