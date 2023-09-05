@@ -17,6 +17,9 @@
     </app-input>
   </section>
   <button class="form__button" (click)="loginWithEmailAndPassword(formLogin)">Iniciar sesión</button>
+  <section class="form__container">
+    <p class="form__error" *ngIf="errorMessage">{{ errorMessage }}</p>
+  </section>
 </form>
 <!-- <app-button [style]="'register'" class="form__button">
   <span (click)="loginWithEmailAndPassword(formLogin)">Iniciar sesión</span>

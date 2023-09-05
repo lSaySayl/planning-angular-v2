@@ -52,4 +52,21 @@
     color: white;
     background-color: #6429cd;
   }
+
+  &__container {
+    height: 50px;
+    max-width: 300px;
+    margin-top: 20px;
+
+  }
+
+  &__error {
+    padding: 5px 10px;
+    color: #ff0000bc;
+    text-align: center;
+    font-size: 12px;
+    background-color: #5229706f;
+    border-radius: 10px;
+    margin: 2% 0;
+  }
 }
